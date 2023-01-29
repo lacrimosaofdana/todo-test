@@ -14,7 +14,7 @@ export default function AddToDoModal(props) {
           onChangeText={setTodo} />
       <View style={[AppStyles.rowContainer, AppStyles.rightAligned, AppStyles.rightMargin]}>
         <Button title="Cancel" onPress={props.onClose} />
-        <Button title="OK" onPress={() => {
+        <Button title="OK" style={[AppStyles.leftMargin]} onPress={() => {
           props.addToDo(todo);
           setTodo("");
           props.onClose();

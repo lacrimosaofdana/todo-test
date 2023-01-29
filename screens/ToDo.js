@@ -85,7 +85,7 @@ export default function ToDo({ navigation }) {
         <Button 
           title="Add ToDo" 
           onPress={() => setModalVisible(true)} 
-          color="#fb4d3d" />
+          color="#69b1ff" />
       </View>
     );
   };
@@ -130,7 +130,7 @@ export default function ToDo({ navigation }) {
           addToDo={addToDo} />
       </Modal>
       <Text style={AppStyles.header}>ToDo</Text>
-      {auth.currentUser.emailVerified ? showContent() : showSendVerificationEmail()}
+      {showContent()}
     </SafeAreaView>
   )
 }
