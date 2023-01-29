@@ -85,7 +85,7 @@ export default function ToDo({ navigation }) {
         <Button 
           title="Add ToDo" 
           onPress={() => setModalVisible(true)} 
-          color="#fb4d3d" />
+          color="#69b1ff" />
       </View>
     );
   };
