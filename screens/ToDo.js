@@ -130,7 +130,7 @@ export default function ToDo({ navigation }) {
           addToDo={addToDo} />
       </Modal>
       <Text style={AppStyles.header}>ToDo</Text>
-      {auth.currentUser.emailVerified ? showContent() : showSendVerificationEmail()}
+      {showContent()}
     </SafeAreaView>
   )
 }
