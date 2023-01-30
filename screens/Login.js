@@ -6,7 +6,7 @@ import { auth } from "../firebase";
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 
 export default function Login({ navigation }) {
-  const background = require("../assets/background.jpg");
+  const background = require("../assets/new-background.jpg");
 
   if (auth.currentUser) {
     navigation.navigate("ToDo");
@@ -45,7 +45,7 @@ export default function Login({ navigation }) {
         style={AppStyles.backgroundCover} 
         behavior={Platform.OS === "ios" ? "padding" : null}
         keyboardVerticalOffset={60}>
-        <Text style={[AppStyles.lightText, AppStyles.header]}>Login</Text>
+        <Text style={[AppStyles.lightText, AppStyles.header]}>Welcome to Todo List!</Text>
         <Text style={AppStyles.errorText}>{errorMessage}</Text>
         <TextInput 
           style={[AppStyles.textInput, AppStyles.lightTextInput, AppStyles.lightText]} 
